@@ -1,0 +1,54 @@
+# -------------------------
+# Core ignores (safe defaults)
+# -------------------------
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+
+# -------------------------
+# Node.js / npm / yarn
+# -------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+build/
+.next/
+out/
+.cache/
+
+# -------------------------
+# Static site generators
+# -------------------------
+# Hugo
+/public/
+/resources/_gen/
+
+# Jekyll
+/_site/
+/.sass-cache/
+/.jekyll-cache/
+/.jekyll-metadata/
+
+# -------------------------
+# IDE / editor cruft
+# -------------------------
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# -------------------------
+# OS-specific
+# -------------------------
+ehthumbs.db
+desktop.ini
