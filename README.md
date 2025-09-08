@@ -18,3 +18,4 @@ For product or app support, please visit our [Support Page](https://actenda.com/
 
 ## ⚖️ License
 All rights reserved. The contents of this repository are proprietary to **ACTENDA LLC** and are not licensed for reuse or redistribution.
+
