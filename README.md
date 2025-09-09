@@ -8,6 +8,20 @@ The site provides:
 - **Support Page** – Embedded Microsoft Forms support request form, plus email contact  
 - **Privacy Policy** – Information on how ACTENDA LLC handles customer data  
 
+## 🎨 Branding Colors
+
+The ACTENDA LLC website uses the following brand colors:
+
+| Color Name | Hex Code   | Usage                |
+|------------|------------|----------------------|
+| Primary    | #26A69A    | Teal, main actions   |
+| Accent     | #FFC107    | Golden yellow, highlights |
+| Neutral 1  | #FAF8F5    | Off-white, backgrounds |
+| Neutral 2  | #1C1E20    | Charcoal, text/dark bg |
+
+These colors are defined as CSS variables in `style.css` and are used throughout the site for a consistent, modern look.
+
+---
 ## 🛠️ Tech Stack
 - **HTML5 + CSS3** – Simple, responsive static pages  
 - **GitHub Pages** – Free hosting directly from this repository  

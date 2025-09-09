@@ -1,14 +1,68 @@
+/* Theme variables for light and dark mode */
+:root {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 18px;
+  --transition: 0.2s cubic-bezier(.4,0,.2,1);
+  --primary: #26A69A;
+  --accent: #FFC107;
+  --background: #FAF8F5;
+  --surface: #FFFFFF;
+  --card: #FFFFFF;
+  --text: #1C1E20;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1C1E20;
+    --surface: #232526;
+    --card: #232526;
+    --text: #FAF8F5;
+    --primary: #26A69A;
+    --accent: #FFC107;
+  }
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.7;
+  background: var(--background);
+  color: var(--text);
+  font-family: 'Inter', Arial, sans-serif;
+  transition: background var(--transition), color var(--transition);
 }
 
 header {
-  background: #222;
-  color: #fff;
-  padding: 1rem;
+  background: var(--primary);
+  color: var(--surface);
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: background var(--transition), color var(--transition);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  background: var(--accent);
+  margin-right: 0.5rem;
 }
 
 header h1 {
@@ -20,9 +74,30 @@ nav {
 }
 
 nav a {
-  color: #fff;
-  margin-right: 1rem;
+  color: var(--surface);
+  margin-right: 1.5rem;
   text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color var(--transition);
+  position: relative;
+}
+nav a:last-child {
+  margin-right: 0;
+}
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--surface);
+  transition: width var(--transition);
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+}
+nav a:hover::after {
+  width: 100%;
 }
 
 nav a:hover {
@@ -30,7 +105,34 @@ nav a:hover {
 }
 
 main {
-  padding: 2rem;
+  padding: 3rem 1rem 2rem 1rem;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(120deg, var(--background) 60%, var(--primary) 200%);
+  transition: background var(--transition);
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 2.5rem 2rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  transition: background var(--transition), box-shadow var(--transition);
+}
+.card h2 {
+  margin-top: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.card p {
+  font-size: 1.15rem;
+  margin-bottom: 0;
 }
 
 form {
@@ -53,20 +155,47 @@ form input, form textarea {
 form button {
   margin-top: 1rem;
   padding: 0.75rem;
-  background: #0073e6;
-  color: #fff;
+  background: var(--primary);
+  color: var(--surface);
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-form button:hover {
-  background: #005bb5;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background var(--transition), color var(--transition);
 }
 
 footer {
-  background: #f4f4f4;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  background: var(--card);
+  color: var(--text);
+  padding: 0;
+  border-top: 1px solid #e0e0e0;
+  box-shadow: 0 -1px 8px rgba(0,0,0,0.03);
+  transition: background var(--transition), color var(--transition);
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition);
+}
+.footer-links a:hover {
+  color: var(--primary);
+  text-decoration: underline;
 }
