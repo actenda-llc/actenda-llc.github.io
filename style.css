@@ -1,3 +1,12 @@
+/* Reset h1 globally for consistency */
+h1 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin: 0;
+}
 /* Theme variables for light and dark mode */
 :root {
   font-family: 'Inter', Arial, sans-serif;
@@ -61,12 +70,14 @@ header {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-  background: var(--accent);
+  background: #fff;
+  padding: 4px;
   margin-right: 0.5rem;
+  display: block;
 }
 
 header h1 {
-  margin: 0;
+  /* Inherit from global h1, but ensure no override */
 }
 
 nav {
