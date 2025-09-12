@@ -1,7 +1,7 @@
 /* Brand color variables for light mode */
 :root {
   font-family: 'Inter', Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   --transition: 0.2s cubic-bezier(.4,0,.2,1);
   --primary: #26A69A;
   --accent: #FFC107;
@@ -90,7 +90,7 @@
 /* Reset h1 globally for consistency */
 h1 {
   font-family: 'Inter', Arial, sans-serif;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 1;
@@ -101,7 +101,7 @@ h1 {
   background: var(--surface);
   border-radius: 14px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-  padding: 2.5rem 2rem;
+  padding: 2rem 1.5rem;
   max-width: 900px; /* Updated for desktop */
   width: 100%;
   margin: 0 auto;
@@ -216,7 +216,7 @@ main {
   background: var(--surface);
   border-radius: 14px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-  padding: 2.5rem 2rem;
+  padding: 2rem 1.5rem;
   max-width: 700px;
   width: 100%;
   margin: 0 auto;
@@ -224,12 +224,12 @@ main {
 }
 .card h2 {
   margin-top: 0;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
 .card p {
-  font-size: 1.15rem;
+  font-size: 1rem;
     max-width: 98vw; /* Updated for mobile */
 }
 
@@ -296,4 +296,117 @@ footer {
 .footer-links a:hover {
   color: var(--primary);
   text-decoration: underline;
+}
+
+/* Legal document formatting standards */
+.legal-document {
+  font-family: 'Inter', 'Times New Roman', serif;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-document h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+  page-break-after: avoid;
+}
+
+.legal-document h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+  page-break-after: avoid;
+}
+
+.legal-document p {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.legal-document ul, .legal-document ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.legal-document li {
+  margin-bottom: 0.5rem;
+}
+
+.legal-document strong {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.legal-document .muted {
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+}
+
+.legal-document table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 13px;
+}
+
+.legal-document table th,
+.legal-document table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.legal-document table th {
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+}
+
+.legal-document .contact-info {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  page-break-inside: avoid;
+}
+
+.legal-document .effective-date {
+  background: var(--accent);
+  color: var(--text);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Print styles for legal documents */
+@media print {
+  .legal-document {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .legal-document h2 {
+    font-size: 16px;
+    page-break-after: avoid;
+  }
+  .legal-document h3 {
+    font-size: 14px;
+    page-break-after: avoid;
+  }
+  .legal-document .contact-info {
+    page-break-inside: avoid;
+  }
 }
