@@ -21,7 +21,7 @@
       "url": "https://actenda.com"
     },
     "datePublished": "2025-09-12",
-    "dateModified": "2025-09-12"
+    "dateModified": "2025-09-26"
   }
   </script>
 </head>
@@ -45,7 +45,7 @@
   <main>
     <div class="card legal-document">
       <div class="effective-date">
-        <strong>Effective Date:</strong> <time datetime="2025-09-12">September 12, 2025</time>
+        <strong>Effective Date:</strong> <time datetime="2025-09-26">September 26, 2025</time>
       </div>
 
       <h2>Privacy Policy</h2>
@@ -86,7 +86,7 @@
         <li><strong>Social/Community (optional)</strong>: profiles, followers, posts/activities; user-controlled visibility.</li>
         <li><strong>Subscriptions &amp; Payments</strong>: Apple IAP; entitlements via RevenueCat; no full card data stored by us.</li>
         <li><strong>Notifications</strong>: optional reminders/alerts; opt in/out anytime.</li>
-        <li><strong>Analytics &amp; Diagnostics</strong>: de-identified/aggregated where possible; performance/crash data collected via Sentry.</li>
+        <li><strong>Analytics &amp; Diagnostics</strong>: de-identified/aggregated data only; crash and performance data collected via Sentry without personal identifiers.</li>
       </ul>
 
       <h2 id="app-mapping">App → Categories</h2>
@@ -124,7 +124,7 @@
             <li><strong>Notifications</strong>: If enabled, used to send reminders and updates.</li>
           </ul>
         </li>
-        <li><strong>Device &amp; Usage Data</strong>: device type, OS version, general app interactions, diagnostics, and crash logs.</li>
+        <li><strong>Device &amp; Usage Data</strong>: device type, OS version, app performance metrics, user interaction patterns (anonymized), and crash logs (without personal identifiers).</li>
         <li><strong>Subscription &amp; Payments</strong>: managed via Apple In-App Purchase and subscription infrastructure (e.g., RevenueCat). We receive non-financial metadata (e.g., product, status) but <em>not</em> your full payment details.</li>
         <li><strong>Social Data (TopSet, optional)</strong>: profile info, followers/following, activities you choose to share. You control visibility through in-app settings.</li>
       </ul>
@@ -140,7 +140,7 @@
 
       <h2 id="sharing">5) How We Share Information</h2>
       <ul>
-        <li><strong>Service providers</strong> (e.g., analytics and error tracking via Sentry, cloud hosting, subscription management like RevenueCat) under contracts that require appropriate safeguards.</li>
+        <li><strong>Service providers</strong> (e.g., error tracking via Sentry with privacy hardening enabled, subscription management like RevenueCat) under contracts that require appropriate safeguards and data minimization.</li>
         <li><strong>Legal, safety, and rights</strong> compliance.</li>
         <li><strong>Social features</strong>: when you choose to share (e.g., TopSet activities), your content may be visible to others per your settings.</li>
         <li>We do <strong>not</strong> sell your personal information.</li>
@@ -209,11 +209,11 @@
       <p><strong>Controls:</strong> Toggle in app and device settings.</p>
 
       <h3>Analytics &amp; Diagnostics</h3>
-      <p><strong>Data:</strong> Device/OS info, usage events, crash logs, error reports, and performance metrics.</p>
-      <p><strong>Purpose:</strong> Improve reliability, stability, and performance; identify and fix bugs.</p>
-      <p><strong>Sharing:</strong> Aggregated/de-identified data with Sentry (our error tracking service) under strict privacy and security standards.</p>
-      <p><strong>Retention:</strong> As needed for analysis and improvement (typically 90 days for crash data).</p>
-      <p><strong>Controls:</strong> Opt-out where supported in device settings; contact support for additional privacy requests.</p>
+      <p><strong>Data:</strong> Device/OS info, anonymized usage events, crash logs, error reports, and performance metrics. Personal identifiers (IP addresses, user IDs, personal information) are excluded through privacy hardening.</p>
+      <p><strong>Purpose:</strong> Improve app reliability, stability, and performance; identify and fix bugs without compromising user privacy.</p>
+      <p><strong>Sharing:</strong> De-identified data only with Sentry (configured with sendDefaultPii: false) under strict privacy and security standards. Screen recordings, if collected, are masked to prevent personal information exposure.</p>
+      <p><strong>Retention:</strong> As needed for analysis and improvement (typically 90 days for crash data); automatically purged based on our data retention policies.</p>
+      <p><strong>Controls:</strong> Data collection is anonymized by design; contact support for privacy requests or to report concerns.</p>
 
       <h2 id="changes">12) Changes to This Policy</h2>
       <p>We may update this Policy from time to time. We will change the "Effective date" above and, where appropriate, notify you through the apps or by other reasonable means.</p>
