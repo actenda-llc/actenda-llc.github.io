@@ -104,11 +104,11 @@
           </tr>
           <tr>
             <td>TopSet</td>
-            <td>Local-Only Core; Health &amp; Fitness Data; Social/Community (optional); Subscriptions &amp; Payments; Notifications; Analytics &amp; Diagnostics</td>
+            <td>Local-Only Core; Health &amp; Fitness Data; Notifications. Paid App Store download (no in-app purchases, subscriptions, ads, analytics, or crash reporting).</td>
           </tr>
           <tr>
             <td>PortionPerfect+</td>
-            <td>Local-Only Core; Health &amp; Fitness Data; Social/Community (optional, if launched); Subscriptions &amp; Payments (if monetized); Notifications; Analytics &amp; Diagnostics</td>
+            <td>Local-Only Core; Health &amp; Fitness Data; Notifications. Paid App Store download (no in-app purchases, subscriptions, ads, analytics, or crash reporting).</td>
           </tr>
           <tr>
             <td>Zeitly</td>
@@ -132,9 +132,9 @@
             <li><strong>Notifications</strong>: If enabled, used to send reminders and updates. Some apps (e.g., Arise Daily Prayer) use on-device local reminders only and do not use push notification services.</li>
           </ul>
         </li>
-        <li><strong>Device &amp; Usage Data</strong>: where Analytics &amp; Diagnostics apply, device type, OS version, app performance metrics, user interaction patterns (anonymized), and crash logs (without personal identifiers). Some apps (e.g., Zeitly, Arise Daily Prayer) do not collect this data.</li>
-        <li><strong>Subscription &amp; Payments</strong>: for apps that offer paid features or subscriptions, managed via Apple In-App Purchase and, where used, subscription infrastructure (e.g., RevenueCat). Some apps (e.g., Zeitly, Arise Daily Prayer) are sold as a paid App Store download with no in-app purchases. In all cases, we receive non-financial metadata at most (e.g., product, status) and <em>not</em> your full payment details.</li>
-        <li><strong>Social Data (TopSet, optional)</strong>: profile info, followers/following, activities you choose to share. You control visibility through in-app settings.</li>
+        <li><strong>Device &amp; Usage Data</strong>: where Analytics &amp; Diagnostics apply, device type, OS version, app performance metrics, user interaction patterns (anonymized), and crash logs (without personal identifiers). Some apps (e.g., TopSet, PortionPerfect+, Zeitly, Arise Daily Prayer) do not collect this data.</li>
+        <li><strong>Subscription &amp; Payments</strong>: for apps that offer paid features or subscriptions, managed via Apple In-App Purchase and, where used, subscription infrastructure (e.g., RevenueCat). Some apps (e.g., TopSet, PortionPerfect+, Zeitly, Arise Daily Prayer) are sold as a paid App Store download with no in-app purchases. In all cases, we receive non-financial metadata at most (e.g., product, status) and <em>not</em> your full payment details.</li>
+        <li><strong>Social Data (optional, if offered)</strong>: for apps that include social/community features, profile info, followers/following, and activities you choose to share. You control visibility through in-app settings.</li>
       </ul>
 
       <h2 id="how-we-use">4) How We Use Information</h2>
@@ -148,9 +148,9 @@
 
       <h2 id="sharing">5) How We Share Information</h2>
       <ul>
-        <li><strong>Service providers</strong> (e.g., where used: error tracking via Sentry with privacy hardening enabled, subscription management like RevenueCat) under contracts that require appropriate safeguards and data minimization. Apps without those integrations (e.g., Zeitly, Arise Daily Prayer) do not share data with those providers.</li>
+        <li><strong>Service providers</strong> (e.g., where used: error tracking via Sentry with privacy hardening enabled, subscription management like RevenueCat) under contracts that require appropriate safeguards and data minimization. Apps without those integrations (e.g., TopSet, PortionPerfect+, Zeitly, Arise Daily Prayer) do not share data with those providers.</li>
         <li><strong>Legal, safety, and rights</strong> compliance.</li>
-        <li><strong>Social features</strong>: when you choose to share (e.g., TopSet activities), your content may be visible to others per your settings.</li>
+        <li><strong>Social features</strong>: when an app offers social/community features and you choose to share, your content may be visible to others per your settings.</li>
         <li>We do <strong>not</strong> sell your personal information.</li>
       </ul>
 
@@ -205,7 +205,7 @@
       <h3>Subscriptions &amp; Payments</h3>
       <p><strong>Data:</strong> Product IDs, entitlement status (for in-app purchases/subscriptions). Paid App Store downloads are processed by Apple; we do not receive your payment card details.</p>
       <p><strong>Purpose:</strong> Manage paid access and features.</p>
-      <p><strong>Sharing:</strong> With Apple and, where used, RevenueCat for processing. Not applicable to apps sold only as a paid download with no in-app purchases (e.g., Zeitly, Arise Daily Prayer).</p>
+      <p><strong>Sharing:</strong> With Apple and, where used, RevenueCat for processing. Not applicable to apps sold only as a paid download with no in-app purchases (e.g., TopSet, PortionPerfect+, Zeitly, Arise Daily Prayer).</p>
       <p><strong>Retention:</strong> As needed for billing history.</p>
       <p><strong>Controls:</strong> Manage/cancel subscriptions in App Store; request account deletion where accounts exist.</p>
 
@@ -217,7 +217,7 @@
       <p><strong>Controls:</strong> Toggle in app and device settings.</p>
 
       <h3>Analytics &amp; Diagnostics</h3>
-      <p><strong>Data:</strong> Where this category applies: device/OS info, anonymized usage events, crash logs, error reports, and performance metrics. Personal identifiers (IP addresses, user IDs, personal information) are excluded through privacy hardening. Some apps (e.g., Zeitly, Arise Daily Prayer) do not use analytics or crash reporting.</p>
+      <p><strong>Data:</strong> Where this category applies: device/OS info, anonymized usage events, crash logs, error reports, and performance metrics. Personal identifiers (IP addresses, user IDs, personal information) are excluded through privacy hardening. Some apps (e.g., TopSet, PortionPerfect+, Zeitly, Arise Daily Prayer) do not use analytics or crash reporting.</p>
       <p><strong>Purpose:</strong> Improve app reliability, stability, and performance; identify and fix bugs without compromising user privacy.</p>
       <p><strong>Sharing:</strong> Where used, de-identified data only with Sentry (configured with sendDefaultPii: false) under strict privacy and security standards. Screen recordings, if collected, are masked to prevent personal information exposure.</p>
       <p><strong>Retention:</strong> As needed for analysis and improvement (typically 90 days for crash data); automatically purged based on our data retention policies.</p>
