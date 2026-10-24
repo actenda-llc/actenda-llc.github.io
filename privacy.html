@@ -21,7 +21,7 @@
       "url": "https://actenda.com"
     },
     "datePublished": "2025-09-12",
-    "dateModified": "2026-10-22"
+    "dateModified": "2026-10-24"
   }
   </script>
 </head>
@@ -45,7 +45,7 @@
   <main>
     <div class="card legal-document">
       <div class="effective-date">
-        <strong>Effective Date:</strong> <time datetime="2026-10-22">October 22, 2026</time>
+        <strong>Effective Date:</strong> <time datetime="2026-10-24">October 24, 2026</time>
       </div>
 
       <h2>Privacy Policy</h2>
@@ -57,6 +57,7 @@
           <li>We collect only what's needed to run our apps and improve them.</li>
           <li>We do <em>not</em> sell your personal information.</li>
           <li>Permissions (Calendar, Health, etc.) are used solely for the features you enable.</li>
+          <li>PortionPerfect+ may send food search terms directly to USDA FoodData Central when you look up foods online; offline lookups use a bundled database on your device.</li>
           <li>You control permissions in your device settings and can request data deletion.</li>
         </ul>
       </div>
@@ -83,6 +84,7 @@
         <li><strong>Local-Only Core</strong>: on-device data unless user opts into sync/backup.</li>
         <li><strong>Calendar Access</strong>: create/manage a dedicated app calendar only; no other calendars touched.</li>
         <li><strong>Health &amp; Fitness Data</strong>: logs workouts/diet; optional Apple Health read/write with explicit consent.</li>
+        <li><strong>Food Nutrition Lookup</strong> (PortionPerfect+): online food search/details via USDA FoodData Central from the device; offline fallback uses a bundled FoodData Central dataset on device.</li>
         <li><strong>Social/Community (optional)</strong>: profiles, followers, posts/activities; user-controlled visibility.</li>
         <li><strong>Subscriptions &amp; Payments</strong>: Apple IAP and/or App Store paid downloads where applicable; entitlements may use RevenueCat for some apps; no full card data stored by us.</li>
         <li><strong>Notifications</strong>: optional reminders/alerts (local and/or push, depending on the app); opt in/out anytime.</li>
@@ -108,7 +110,7 @@
           </tr>
           <tr>
             <td>PortionPerfect+</td>
-            <td>Local-Only Core; Health &amp; Fitness Data; Notifications. Paid App Store download (no in-app purchases, subscriptions, ads, analytics, or crash reporting).</td>
+            <td>Local-Only Core; Health &amp; Fitness Data; Food Nutrition Lookup; Notifications. Paid App Store download (no in-app purchases, subscriptions, ads, analytics, or crash reporting).</td>
           </tr>
           <tr>
             <td>Zeitly</td>
@@ -128,10 +130,11 @@
         <li><strong>Permissions-Based Data</strong>:
           <ul>
             <li><strong>Calendar (Actenda, Zeitly)</strong>: We request access to create and manage a dedicated calendar for Actenda or Zeitly and related events. We do not read, modify, or share events in your other calendars.</li>
-            <li><strong>Health &amp; Fitness (TopSet / PortionPerfect+)</strong>: With your consent, you may log data or connect services (e.g., Apple Health). Access and use are limited to the features you enable.</li>
+            <li><strong>Health &amp; Fitness (TopSet / PortionPerfect+)</strong>: With your consent, you may log data or connect services (e.g., Apple Health). Access and use are limited to the features you enable. Diet and workout logs you create remain on your device under Local-Only Core unless you opt into another sharing feature.</li>
             <li><strong>Notifications</strong>: If enabled, used to send reminders and updates. Some apps (e.g., Arise Daily Prayer) use on-device local reminders only and do not use push notification services.</li>
           </ul>
         </li>
+        <li><strong>Food Nutrition Lookup (PortionPerfect+)</strong>: When you search for or look up foods while online, food search terms or food identifiers may be sent <em>directly from your device</em> to the U.S. Department of Agriculture's FoodData Central API (<code>api.nal.usda.gov</code>). Actenda does not operate a server between your device and USDA and does not receive those queries on Actenda systems. When you are offline or the live API is unavailable, lookups use a FoodData Central dataset bundled with the app on your device; no request is sent to USDA in that case. We do not include your name, email, Apple Health data, or your full diet history in those API requests.</li>
         <li><strong>Device &amp; Usage Data</strong>: where Analytics &amp; Diagnostics apply, device type, OS version, app performance metrics, user interaction patterns (anonymized), and crash logs (without personal identifiers). Some apps (e.g., TopSet, PortionPerfect+, Zeitly, Arise Daily Prayer) do not collect this data.</li>
         <li><strong>Subscription &amp; Payments</strong>: for apps that offer paid features or subscriptions, managed via Apple In-App Purchase and, where used, subscription infrastructure (e.g., RevenueCat). Some apps (e.g., TopSet, PortionPerfect+, Zeitly, Arise Daily Prayer) are sold as a paid App Store download with no in-app purchases. In all cases, we receive non-financial metadata at most (e.g., product, status) and <em>not</em> your full payment details.</li>
         <li><strong>Social Data (optional, if offered)</strong>: for apps that include social/community features, profile info, followers/following, and activities you choose to share. You control visibility through in-app settings.</li>
@@ -139,7 +142,7 @@
 
       <h2 id="how-we-use">4) How We Use Information</h2>
       <ul>
-        <li>Provide and operate app features (e.g., scheduling events, tracking workouts or diet, prayer/devotion content and local notes).</li>
+        <li>Provide and operate app features (e.g., scheduling events, tracking workouts or diet, food nutrition lookup, prayer/devotion content and local notes).</li>
         <li>Personalize your experience and remember preferences.</li>
         <li>Where Analytics &amp; Diagnostics apply, analyze performance and improve stability, safety, and quality.</li>
         <li>Provide support and communicate about changes, security, or service notices.</li>
@@ -149,6 +152,7 @@
       <h2 id="sharing">5) How We Share Information</h2>
       <ul>
         <li><strong>Service providers</strong> (e.g., where used: error tracking via Sentry with privacy hardening enabled, subscription management like RevenueCat) under contracts that require appropriate safeguards and data minimization. Apps without those integrations (e.g., TopSet, PortionPerfect+, Zeitly, Arise Daily Prayer) do not share data with those providers.</li>
+        <li><strong>USDA FoodData Central (PortionPerfect+)</strong>: Online food lookups are sent from your device to USDA's FoodData Central API so the app can return nutrition reference data. USDA (or its infrastructure) may receive the search terms or food identifiers you submit and ordinary technical metadata associated with the request (such as IP address). Offline lookups use the bundled on-device dataset and are not shared with USDA. Actenda does not sell this information and does not receive a copy of those live API requests.</li>
         <li><strong>Legal, safety, and rights</strong> compliance.</li>
         <li><strong>Social features</strong>: when an app offers social/community features and you choose to share, your content may be visible to others per your settings.</li>
         <li>We do <strong>not</strong> sell your personal information.</li>
@@ -191,9 +195,16 @@
       <h3>Health &amp; Fitness Data</h3>
       <p><strong>Data:</strong> Workouts, diet logs, Apple Health data if authorized.</p>
       <p><strong>Purpose:</strong> Tracking and insights for fitness/diet goals.</p>
-      <p><strong>Sharing:</strong> Not sold; de-identified analytics to improve services.</p>
+      <p><strong>Sharing:</strong> Not sold. Your logged workouts and diet entries are not sent to USDA. See Food Nutrition Lookup for optional food-database queries.</p>
       <p><strong>Retention:</strong> Until user deletes or requests removal.</p>
       <p><strong>Controls:</strong> Revoke Apple Health permissions; delete logs or request deletion.</p>
+
+      <h3>Food Nutrition Lookup</h3>
+      <p><strong>Data:</strong> Food search terms or food identifiers used to retrieve nutrition reference data. When online, these are transmitted from your device to USDA FoodData Central; when offline (or if the live API is unavailable), the same type of lookup runs against a bundled FoodData Central dataset on your device.</p>
+      <p><strong>Purpose:</strong> Provide food and nutrient reference information in PortionPerfect+.</p>
+      <p><strong>Sharing:</strong> Live online lookups: with USDA FoodData Central only, as needed to return results. Offline lookups: none. Not sold. Actenda does not proxy or store these live queries on Actenda servers.</p>
+      <p><strong>Retention:</strong> Actenda does not retain live USDA query traffic. Any results you choose to save as part of a diet log are retained under Local-Only Core / Health &amp; Fitness Data on your device.</p>
+      <p><strong>Controls:</strong> Use the app offline or avoid online food search to keep lookups on-device; delete saved diet entries via in-app or device controls.</p>
 
       <h3>Social/Community (optional)</h3>
       <p><strong>Data:</strong> Profile, followers, posts/activities, comments.</p>
